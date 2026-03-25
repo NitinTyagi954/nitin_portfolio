@@ -72,28 +72,35 @@ const About = () => {
 
           {/* GREETING */}
           <motion.h2
-            className="text-4xl md:text-5xl font-light text-white mb-8"
+            className="text-3xl md:text-5xl font-light text-white mb-8"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Hi, I'm <span className="text-[#c9a961]">Nitin</span>, nice to meet you!
+            Hi, I'm <span className="text-[#c9a961]">Nitin</span>, a Full-Stack Developer
           </motion.h2>
 
           {/* BIO PARAGRAPH */}
-          <motion.p
-            className="text-white text-lg leading-relaxed mb-12 font-light"
+          <motion.div
+            className="text-white text-lg leading-relaxed mb-12 font-light space-y-4"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            I'm a full-stack developer passionate about creating beautiful, high-performance web applications. 
-            With expertise in React, Node.js, and modern web technologies, I transform ideas into elegant digital solutions. 
-            I believe in writing clean code, thoughtful design, and building experiences that users love. 
-            When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects.
-          </motion.p>
+            <p>
+              I specialize in the MERN stack and have built multiple real-world projects 
+              including scalable web applications with authentication, REST APIs, and responsive UIs. 
+            </p>
+            <p>
+              I enjoy working on both frontend and backend, focusing on clean code and performance. 
+              Currently, I am improving my problem-solving skills and exploring system design concepts.
+            </p>
+            <p className="text-[#c9a961]">
+              I love turning complex problems into simple, intuitive solutions.
+            </p>
+          </motion.div>
 
 
           {/* EDUCATION */}

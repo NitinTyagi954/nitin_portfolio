@@ -24,7 +24,7 @@ const certificates = [
   {
     title: "Computer Programming",
     issuer: "Neo Collab",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20111723.png",
+    image: "https://ik.imagekit.io/atproduction/image+c.png",
     link: "https://ik.imagekit.io/atproduction/c.pdf"
   },
   {
@@ -40,10 +40,10 @@ const certificates = [
     link: "https://ik.imagekit.io/atproduction/OOPs.pdf"
   },
   {
-    title: "Digital Well-being",
+    title: "Hardware and Software",
     issuer: "Coursera",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20112336.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/Coursera_mausam.pdf"
+    image: "https://ik.imagekit.io/atproduction/image+hardware.png",
+    link: "https://ik.imagekit.io/atproduction/hardware_OS.pdf"
   },
   {
     title: "Java Programming",
@@ -54,7 +54,7 @@ const certificates = [
   {
     title: "DSA",
     issuer: "Neo Collab",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20112634.png",
+    image: "https://ik.imagekit.io/atproduction/image+oops.png",
     link: "https://ik.imagekit.io/vzxwc5boa/https___s3.amazonaws.com_exams-media_2027_StudentS%20certificate%20for%20CSE205_12315203@neocolab.ai.pdf"
   },
 ];

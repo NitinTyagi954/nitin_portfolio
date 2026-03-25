@@ -16,7 +16,7 @@ const achievements = [
   {
     icon: <FaLightbulb className="text-6xl text-[#c9a961] mb-6 drop-shadow-[0_0_15px_rgba(201,169,97,0.5)]" />,
     title: "Data Structures & Algorithms",
-    description: "Solved 200+ DSA problems on platforms like LeetCode, strengthening problem-solving skills and algorithmic thinking.",
+    description: "Solved 300+ DSA problems on platforms like LeetCode, strengthening problem-solving skills and algorithmic thinking.",
   },
   {
     icon: <FaUsers className="text-6xl text-[#9b8b7e] mb-6" />,

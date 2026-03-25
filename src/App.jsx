@@ -36,15 +36,15 @@ function App() {
           className="relative min-h-screen bg-[#1a1a1a] text-[#e8e8e8] w-full"
         > 
           <Navbar />
-          <Hero />
-          <About />
-          <Skills />
-          <CodingProfile />
-          <Internship />
-          <Projects />
-          <Achievements />
-          <Certificates />
-          <Contact />
+<Hero />
+<About />
+<Skills />
+<Projects />
+<Internship />
+<CodingProfile />
+<Achievements />
+<Certificates />
+<Contact />
         </motion.div>
       )}
     </AnimatePresence>

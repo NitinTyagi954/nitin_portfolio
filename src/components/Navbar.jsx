@@ -8,15 +8,15 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { name: 'Home', to: 'home' },
+    { name: 'Home', to: 'hero' },
+    { name: 'About', to: 'about' }, 
     { name: 'Skills', to: 'skills' },
-    { name: 'Coding', to: 'coding' },
-    { name: 'Certificates', to: 'certificates' },
-    { name: 'Internships', to: 'internship' },
-    { name: 'Achievements', to: 'achievements' },
     { name: 'Projects', to: 'projects' },
-    { name: 'About', to: 'about' },
-    { name: 'Contact', to: 'contact' },
+    { name: 'Internships', to: 'internship' },
+    { name: 'Coding', to: 'coding' },
+    { name: 'Achievements', to: 'achievements' },
+    { name: 'Certificates', to: 'certificates' },
+    { name: 'Contact', to: 'contact' }
   ];
 
   useEffect(() => {
@@ -27,18 +27,25 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4 shadow-[0_4px_30px_rgba(0,0,0,0.1)] border-b border-[#c9a961]/10' : 'bg-transparent py-6'}`}>
-      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center relative">
-        <Link to="home" smooth duration={500} className="text-2xl font-bold cursor-pointer text-[#e8e8e8] whitespace-nowrap z-10">
+      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center relative gap-8">
+        <Link 
+          to="hero" 
+          smooth 
+          duration={200}
+          offset={-50}
+          className="text-4xl md:text-5xl cursor-pointer text-[#e8e8e8] whitespace-nowrap z-10 hover:text-[#c9a961] transition-colors duration-300 flex-shrink-0"
+          style={{ fontFamily: "'Passions Conflict', cursive" }}
+        >
           Nitin Tyagi<span className="text-[#c9a961]"></span>
         </Link>
 
-        <div className="hidden md:flex space-x-6 lg:space-x-8 absolute left-1/2 transform -translate-x-1/2">
+        <div className="hidden md:flex flex-wrap justify-end space-x-6 lg:space-x-8 w-full max-w-5xl">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.to}
               smooth
-              duration={500}
+              duration={200}
               spy
               activeClass="text-[#c9a961]"
               className="text-sm font-medium text-[#b8b8c8] hover:text-[#c9a961] cursor-pointer transition-colors"
@@ -69,7 +76,7 @@ const Navbar = () => {
                   key={item.name}
                   to={item.to}
                   smooth
-                  duration={500}
+                  duration={200}
                   spy
                   activeClass="text-[#c9a961]"
                   onClick={() => setIsOpen(false)}

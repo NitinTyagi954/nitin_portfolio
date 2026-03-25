@@ -136,11 +136,7 @@ const CodingProfile = () => {
                     <p className="text-[#a8a8b8] text-sm mb-1">Institute Rank</p>
                     <p className="text-xl font-bold text-[#e8e8e8]">7,599 <span className="text-sm font-normal text-[#a8a8b8] ml-2">(LPU Jalandhar)</span></p>
                   </div>
-                  <div className="pt-2 flex justify-between items-center text-sm text-[#a8a8b8]">
-                    <span>Active Profile</span>
-                    <span>Consistency Tracker</span>
-                  </div>
-                </div>
+                   </div>
               </div>
 
               {/* GeeksforGeeks Back */}
