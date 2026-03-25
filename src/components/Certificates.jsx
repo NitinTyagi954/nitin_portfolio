@@ -4,40 +4,40 @@ import { FiExternalLink, FiFileText } from "react-icons/fi";
  
 const certificates = [
   {
-    title: "Training Certificate",
-    issuer: "Training",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-21%20220103.png?updatedAt=1774110726942",
-    link: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-21%20220103.png"
+    title: "Computative Programing",
+    issuer: "Algo Tutor",
+    image: "https://ik.imagekit.io/atproduction/AlgoTutor.png",
+    link: "https://ik.imagekit.io/atproduction/AlgoTutor.png"
   },
   {
-    title: "Event Certificate",
-    issuer: "Organization",
-    image: "https://ik.imagekit.io/vzxwc5boa/WhatsApp%20Image%202024-04-08%20at%2012.40.41%20AM.jpeg",
-    link: "https://ik.imagekit.io/vzxwc5boa/WhatsApp%20Image%202024-04-08%20at%2012.40.41%20AM.jpeg"
+    title: "Bits and Bytes",
+    issuer: "Google",
+    image: "https://ik.imagekit.io/atproduction/image.png",
+    link: "https://ik.imagekit.io/atproduction/Bits_and_bites.pdf"
   },
   {
-    title: "Java with OOPs",
-    issuer: "Ciper School",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20111438.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/Screenshot%202025-09-30%20224054.pdf"
+    title: "Cloud Computing",
+    issuer: "NPTEL",
+    image: "https://ik.imagekit.io/atproduction/image(1).png",
+    link: "https://ik.imagekit.io/atproduction/Cloud%20Computing%20(4).pdf"
   },
   {
     title: "Computer Programming",
     issuer: "Neo Collab",
     image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20111723.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/neo%20collab%20certificate.pdf"
+    link: "https://ik.imagekit.io/atproduction/c.pdf"
   },
   {
-    title: "Backend Development",
-    issuer: "Physics Wallah",
-    image: "https://ik.imagekit.io/vzxwc5boa/Mausam.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/Mausam.png"
+    title: "Python",
+    issuer: "Udemy",
+    image: "https://ik.imagekit.io/atproduction/image___2.png?updatedAt=1774464549814",
+    link: "https://ik.imagekit.io/atproduction/python.pdf"
   },
   {
-    title: "Introduction to Python",
-    issuer: "Infosys SpringBoard",
-    image: "https://ik.imagekit.io/vzxwc5boa/Mausam%20kumari.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/Mausam%20kumari.png"
+    title: "Introduction to OOPs",
+    issuer: "Neo Colab",
+    image: "https://ik.imagekit.io/atproduction/image___6.png",
+    link: "https://ik.imagekit.io/atproduction/OOPs.pdf"
   },
   {
     title: "Digital Well-being",
@@ -46,10 +46,10 @@ const certificates = [
     link: "https://ik.imagekit.io/vzxwc5boa/Coursera_mausam.pdf"
   },
   {
-    title: "Cloud Computing",
-    issuer: "IIT kharagpur",
-    image: "https://ik.imagekit.io/atproduction/Screenshot%202026-03-23%20112427.png",
-    link: "https://ik.imagekit.io/vzxwc5boa/DOC-20250523-WA0005..pdf"
+    title: "Java Programming",
+    issuer: "Neo Colab",
+    image: "https://ik.imagekit.io/atproduction/image___4.png",
+    link: "https://ik.imagekit.io/atproduction/javaProgramming.pdf"
   },
   {
     title: "DSA",

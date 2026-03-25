@@ -4,7 +4,7 @@ import { FaBriefcase } from 'react-icons/fa';
 
 const internships = [
   {
-    role: 'Frontend Developer Intern',
+    role: 'Full-Stack Developer Intern',
     company: 'Learn Comet Edu',
     link: 'https://www.learncometedu.com/',
     duration: 'June 2025 - Sep 2025',
@@ -13,6 +13,7 @@ const internships = [
       'Built interactive components including mentor-spotlight sections to improve user engagement and overall UI experience.'
       
     ],
+     certificate: 'https://ik.imagekit.io/atproduction/fdd38b0b-5feb-4ae7-bfad-8a2a40219031.jpg'
   },
   {
     role: 'Software Developer Intern',
@@ -23,6 +24,7 @@ const internships = [
       'Contributed to the development of a production web platform and internal CRM by implementing features across frontend and backend systems.',
       'Improved system performance and security by optimizing rendering processes and enhancing the overall application architecture.'
     ],
+     certificate: 'https://ik.imagekit.io/atproduction/Screenshot%202026-03-25%20224940.png'
   },
 ];
 
@@ -82,43 +84,64 @@ const InternshipCard = ({ internship, index, scrollYProgress, totalItems }) => {
             <motion.div
               style={{ 
                   opacity: opacity,
-                  x: 0 // Reset x for simple fade in place, or animate in
+                  x: 0,
+                  perspective: '1000px'
               }}
-              // Retain initial entrance animation if desired, separate from scroll highlight
               initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6 }}
-              className="w-full md:w-5/12 pl-12 md:pl-0"
+              className="w-full md:w-5/12 pl-12 md:pl-0 group h-full"
             >
-              <motion.div 
-                style={{ 
-                    borderColor: `rgba(201, 169, 97, ${borderOpacity})`, 
-                    background: bgGlow,
-                    boxShadow: glow 
-                }}
-                className="glass p-6 rounded-2xl border border-[#c9a961]/10 transition-all duration-300"
-              >
-                <span className="text-sm font-semibold text-[#c9a961] mb-2 inline-block px-3 py-1 bg-[#c9a961]/10 rounded-full">
-                  {internship.duration}
-                </span>
-                <h3 className="text-2xl font-bold mb-1 text-[#e8e8e8]">{internship.role}</h3>
-                <h4 className="text-lg text-[#a8a8b8] mb-4">
-                  <a 
-                    href={internship.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="hover:text-[#c9a961] transition-colors underline decoration-[#c9a961]/50 hover:decoration-[#c9a961]"
+              <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Front Side */}
+                <motion.div 
+                  style={{ 
+                      borderColor: `rgba(201, 169, 97, ${borderOpacity})`, 
+                      background: bgGlow,
+                      boxShadow: glow 
+                  }}
+                  className="glass p-6 rounded-2xl border border-[#c9a961]/10 [backface-visibility:hidden] w-full min-h-[220px]"
+                >
+                  <span className="text-sm font-semibold text-[#c9a961] mb-2 inline-block px-3 py-1 bg-[#c9a961]/10 rounded-full">
+                    {internship.duration}
+                  </span>
+                  <h3 className="text-2xl font-bold mb-1 text-[#e8e8e8]">{internship.role}</h3>
+                  <h4 className="text-lg text-[#a8a8b8] mb-4">
+                    <a 
+                      href={internship.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:text-[#c9a961] transition-colors underline decoration-[#c9a961]/50 hover:decoration-[#c9a961]"
+                    >
+                      {internship.company}
+                    </a>
+                  </h4>
+                  <ul className="list-disc list-inside space-y-2 text-[#a8a8b8]">
+                    {internship.description.map((item, i) => (
+                      <li key={i} className="text-sm leading-relaxed">{item}</li>
+                    ))}
+                  </ul>
+                </motion.div>
+
+                {/* Back Side */}
+                {internship.certificate && (
+                  <motion.div 
+                    style={{ 
+                      borderColor: `rgba(201, 169, 97, ${borderOpacity})`, 
+                      background: bgGlow,
+                      boxShadow: glow 
+                    }}
+                    className="absolute inset-0 glass p-2 rounded-2xl border border-[#c9a961]/10 [backface-visibility:hidden] [transform:rotateY(180deg)] flex items-center justify-center w-full h-full overflow-hidden"
                   >
-                    {internship.company}
-                  </a>
-                </h4>
-                <ul className="list-disc list-inside space-y-2 text-[#a8a8b8]">
-                  {internship.description.map((item, i) => (
-                    <li key={i} className="text-sm leading-relaxed">{item}</li>
-                  ))}
-                </ul>
-              </motion.div>
+                    <img 
+                      src={internship.certificate} 
+                      alt={`${internship.company} Certificate`} 
+                      className="w-full h-full object-cover rounded-xl"
+                    />
+                  </motion.div>
+                )}
+              </div>
             </motion.div>
           </div>
     );

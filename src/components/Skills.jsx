@@ -1,26 +1,29 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { FaHtml5, FaJs, FaReact, FaNodeJs, FaGithub, FaFigma, FaPython, FaDatabase } from 'react-icons/fa';
+import { SiTailwindcss, SiMongodb, SiNextdotjs, SiTypescript, SiExpress, SiVite, SiRedux } from 'react-icons/si';
+import { TbBrandThreejs } from 'react-icons/tb';
 
 const skills = [
   // Core / Inner Circle (6 items)
-  { name: 'HTML/CSS', category: 'Frontend' },
-  { name: 'JavaScript', category: 'Language' },
-  { name: 'React', category: 'Frontend' },
-  { name: 'Node.js', category: 'Backend' },
-  { name: 'Tailwind', category: 'Frontend' },
-  { name: 'MongoDB', category: 'Database' },
+  { name: 'HTML/CSS', category: 'Frontend', icon: <FaHtml5 className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#e34c26]" /> },
+  { name: 'JavaScript', category: 'Language', icon: <FaJs className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#f7df1e]" /> },
+  { name: 'React', category: 'Frontend', icon: <FaReact className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#61dafb]" /> },
+  { name: 'Node.js', category: 'Backend', icon: <FaNodeJs className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#339933]" /> },
+  { name: 'Tailwind', category: 'Frontend', icon: <SiTailwindcss className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#06b6d4]" /> },
+  { name: 'MongoDB', category: 'Database', icon: <SiMongodb className="w-6 h-6 md:w-8 md:h-8 mb-1 text-[#47a248]" /> },
   
   // Outer Circle (10 items)
-  { name: 'Next.js', category: 'Frontend' },
-  { name: 'TypeScript', category: 'Language' },
-  { name: 'SQL', category: 'Database' },
-  { name: 'Express', category: 'Backend' },
-  { name: 'Git/GitHub', category: 'Tools' },
-  { name: 'Figma', category: 'Design' },
-  { name: 'Three.js', category: 'Library' },
-  { name: 'Vite', category: 'Tools' },
-  { name: 'Python', category: 'Language' },
-  { name: 'Redux', category: 'State' },
+  { name: 'Next.js', category: 'Frontend', icon: <SiNextdotjs className="w-5 h-5 md:w-6 md:h-6 mb-1 text-white" /> },
+  { name: 'TypeScript', category: 'Language', icon: <SiTypescript className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#3178c6]" /> },
+  { name: 'SQL', category: 'Database', icon: <FaDatabase className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#00758f]" /> },
+  { name: 'Express', category: 'Backend', icon: <SiExpress className="w-5 h-5 md:w-6 md:h-6 mb-1 text-white" /> },
+  { name: 'Git/GitHub', category: 'Tools', icon: <FaGithub className="w-5 h-5 md:w-6 md:h-6 mb-1 text-white" /> },
+  { name: 'Figma', category: 'Design', icon: <FaFigma className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#f24e1e]" /> },
+  { name: 'Three.js', category: 'Library', icon: <TbBrandThreejs className="w-5 h-5 md:w-6 md:h-6 mb-1 text-white" /> },
+  { name: 'Vite', category: 'Tools', icon: <SiVite className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#646cff]" /> },
+  { name: 'Python', category: 'Language', icon: <FaPython className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#3776ab]" /> },
+  { name: 'Redux', category: 'State', icon: <SiRedux className="w-5 h-5 md:w-6 md:h-6 mb-1 text-[#764abc]" /> },
 ];
 
 const Hexagon = ({ size = "w-32 h-36", color = "#c9a961", children, className = "" }) => (
@@ -90,7 +93,8 @@ const SkillNode = ({ skill, index, total, layer, scrollYProgress }) => {
                 className="absolute flex items-center justify-center z-10"
             >
                 <Hexagon size={isInner ? "w-24 h-28 md:w-28 md:h-32" : "w-20 h-24 md:w-24 md:h-28"}>
-                    <div className="text-center p-1">
+                    <div className="flex flex-col items-center justify-center text-center p-1">
+                        {skill.icon}
                         <span className={`block font-bold ${isInner ? "text-xs md:text-sm text-[#e8e8e8]" : "text-[10px] md:text-xs text-gray-300"}`}>
                             {skill.name}
                         </span>
@@ -125,7 +129,7 @@ const Skills = () => {
                 
                 {/* Central "Mind Map" Core */}
                 <motion.div 
-                    style={{ scale: useTransform(scrollYProgress, [0, 0.3], [1.3, 1]) }}
+                    style={{ scale: useTransform(scrollYProgress, [0, 1], [1.2, 0.5]) }}
                     className="relative z-20 flex flex-col items-center justify-center"
                 >
                     <motion.h2 
