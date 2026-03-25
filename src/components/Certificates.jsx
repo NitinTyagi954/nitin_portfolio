@@ -12,7 +12,7 @@ const certificates = [
   {
     title: "Bits and Bytes",
     issuer: "Google",
-    image: "https://ik.imagekit.io/atproduction/image.png",
+    image: "https://ik.imagekit.io/atproduction/image+bitsand%20bites.png",
     link: "https://ik.imagekit.io/atproduction/Bits_and_bites.pdf"
   },
   {
