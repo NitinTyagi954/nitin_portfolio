@@ -78,7 +78,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Hi, I'm <span className="text-[#c9a961]">Mausam</span>, nice to meet you!
+            Hi, I'm <span className="text-[#c9a961]">Nitin</span>, nice to meet you!
           </motion.h2>
 
           {/* BIO PARAGRAPH */}
@@ -113,21 +113,21 @@ const About = () => {
               <div className="pb-4 border-b md:border-b-0 md:border-r border-gray-700 md:pr-8">
                 <h4 className="text-white font-semibold mb-1">Lovely Professional University</h4>
                 <p className="text-gray-400 text-sm mb-1">Bachelor of Technology - Computer Science and Engineering</p>
-                <p className="text-[#c9a961] text-sm font-light">CGPA: 7.00</p>
+                <p className="text-[#c9a961] text-sm font-light">CGPA: 7.65</p>
               </div>
 
               {/* Holy Cross Public School */}
               <div className="pb-4 border-b md:border-b-0 md:border-r border-gray-700 md:pr-8">
-                <h4 className="text-white font-semibold mb-1">Holy Cross Public School</h4>
+                <h4 className="text-white font-semibold mb-1">Rakhee Public School</h4>
                 <p className="text-gray-400 text-sm mb-1">Intermediate (Class XII)</p>
-                <p className="text-[#c9a961] text-sm font-light">Percentage: 75.8%</p>
+                <p className="text-[#c9a961] text-sm font-light">Percentage: 78.4%</p>
               </div>
 
               {/* Holy Mission Sr. Sec. School */}
               <div>
-                <h4 className="text-white font-semibold mb-1">Holy Mission Sr. Sec. School</h4>
+                <h4 className="text-white font-semibold mb-1">Rakhee Public School</h4>
                 <p className="text-gray-400 text-sm mb-1">Matriculation (Class X)</p>
-                <p className="text-[#c9a961] text-sm font-light">Percentage: 82.8%</p>
+                <p className="text-[#c9a961] text-sm font-light">Percentage: 74.5%</p>
               </div>
             </div>
           </motion.div>

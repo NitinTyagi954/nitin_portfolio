@@ -293,8 +293,8 @@ const Hero = () => {
           {/* PROFILE IMAGE — same center as robot, crossfades in */}
           <div id="profile-image" ref={profileImageRef}>
             <img
-              src="https://ik.imagekit.io/atproduction/a00abd91-7e79-4434-bb5a-0b08f0b58319.jpg"
-              alt="Mausam Kumari"
+              src="https://ik.imagekit.io/atproduction/fe3bd7aa-cd17-4419-9db2-9ab8ebc46239.jpg"
+              alt="Nitin Tyagi"
             />
           </div>
 
@@ -302,8 +302,8 @@ const Hero = () => {
           <div id="text-section" ref={textRef}>
             <p className="tag">Hello, I'm</p>
             <h1 className="hero-heading">
-              <span style={{color:"#ffffff"}}>Mausam</span>
-              <span className="nm" style={{marginLeft:"12px"}}>Kumari</span>
+              <span style={{color:"#ffffff"}}>Nitin</span>
+              <span className="nm" style={{marginLeft:"12px"}}>Tyagi</span>
             </h1>
             <p className="role">Web Developer &amp; Problem Solver</p>
             <p className="bio">
@@ -312,18 +312,18 @@ const Hero = () => {
               seamless user experiences.
             </p>
             <div className="ctas">
-              <a href="https://ik.imagekit.io/vzxwc5boa/Muasam_Final_CV.pdf?updatedAt=1773521178613"
+              <a href="https://ik.imagekit.io/atproduction/Nitin_final_cv.pdf"
                 target="_blank" rel="noopener noreferrer"
                 className="btn-hero bp"
                 style={{display:"flex",alignItems:"center",gap:"10px"}}>
                 Download Resume <FaDownload />
               </a>
               <div style={{display:"flex",gap:"20px",fontSize:"1.8rem",alignItems:"center"}}>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" style={{color:"#c9a961"}}
+                <a href="https://github.com/NitinTyagi954" target="_blank" rel="noopener noreferrer" style={{color:"#c9a961"}}
                   onMouseOver={e=>e.currentTarget.style.color="#fff"} onMouseOut={e=>e.currentTarget.style.color="#c9a961"}><FaGithub /></a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" style={{color:"#c9a961"}}
+                <a href="https://linkedin.com/in/nitintyagi954/" target="_blank" rel="noopener noreferrer" style={{color:"#c9a961"}}
                   onMouseOver={e=>e.currentTarget.style.color="#fff"} onMouseOut={e=>e.currentTarget.style.color="#c9a961"}><FaLinkedin /></a>
-                <a href="mailto:mausam@example.com" style={{color:"#c9a961"}}
+                <a href="mailto:nitintyagii2004@gmail.com" style={{color:"#c9a961"}}
                   onMouseOver={e=>e.currentTarget.style.color="#fff"} onMouseOut={e=>e.currentTarget.style.color="#c9a961"}><FaEnvelope /></a>
               </div>
             </div>

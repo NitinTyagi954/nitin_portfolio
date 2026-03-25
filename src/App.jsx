@@ -29,12 +29,12 @@ function App() {
         <div className="relative min-h-screen bg-[#1a1a1a] text-[#e8e8e8] w-full">
           <Navbar />
           <Hero />
-          <Skills />
-          <Certificates />
-          <Internship />
-          <Achievements />
-          <Projects />
           <About />
+          <Skills />
+          <Internship />
+          <Projects />
+          <Achievements />
+          <Certificates />
           <Contact />
         </div>
       )}
