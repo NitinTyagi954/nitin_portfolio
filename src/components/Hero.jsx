@@ -291,10 +291,18 @@ const Hero = () => {
           </div>
 
           {/* PROFILE IMAGE — same center as robot, crossfades in */}
-          <div id="profile-image" ref={profileImageRef}>
+          <div id="profile-image" ref={profileImageRef} className="group">
             <img
               src="https://ik.imagekit.io/atproduction/fe3bd7aa-cd17-4419-9db2-9ab8ebc46239.jpg"
               alt="Nitin Tyagi"
+              className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+              style={{ objectFit: 'cover' }}
+            />
+            <img
+              src="https://ik.imagekit.io/atproduction/image_nitin.png?updatedAt=1774466618223"
+              alt="Nitin Tyagi Cartoon"
+              className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+              style={{ objectFit: 'cover' }}
             />
           </div>
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -18,16 +19,22 @@ function App() {
     // Simulate loading assets
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <>
+    <AnimatePresence mode="wait">
       {loading ? (
-        <Loader />
+        <Loader key="loader" />
       ) : (
-        <div className="relative min-h-screen bg-[#1a1a1a] text-[#e8e8e8] w-full">
+        <motion.div 
+          key="main-app"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className="relative min-h-screen bg-[#1a1a1a] text-[#e8e8e8] w-full"
+        > 
           <Navbar />
           <Hero />
           <About />
@@ -38,10 +45,9 @@ function App() {
           <Achievements />
           <Certificates />
           <Contact />
-        </div>
+        </motion.div>
       )}
-    </>
-  );
-}
+    </AnimatePresence>
+  )}
 
 export default App;

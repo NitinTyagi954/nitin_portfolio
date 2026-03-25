@@ -95,7 +95,7 @@ const CodingProfile = () => {
               <div className="absolute inset-0 glass p-2 rounded-2xl border border-[#c9a961]/10 [backface-visibility:hidden] [transform:rotateY(180deg)] flex items-center justify-center overflow-hidden">
                  <img 
                     // src="https://ik.imagekit.io/atproduction/Screenshot%202026-03-25%20225527.png" 
-                    src="https://ik.imagekit.io/atproduction/image(2).png"
+                    src="https://ik.imagekit.io/atproduction/Screenshot%202026-03-25%20230740.png"
                     alt="LeetCode Profile" 
                     className="w-full h-full object-cover rounded-xl"
                   />
